@@ -3,13 +3,16 @@ import 'package:widget_testing2/user_model.dart';
 import 'package:widget_testing2/user_repository.dart';
 
 
+
+
 class MyHomePage extends StatefulWidget {
+ 
 
 
   final Future<List<User>> futureUsers;
 
 
-  const MyHomePage({super.key, required this.title, required this.futureUsers});
+  const MyHomePage({super.key, this.title = '', required this.futureUsers});
 
   final String title;
 
